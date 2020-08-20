@@ -25,7 +25,7 @@ async def run():
     """
 
     await Tortoise.init(
-        db_url="postgres://postgres:docker@db.localhost:5432/postgres",
+        db_url="postgres://postgres:docker@db:5432/postgres",
         modules={
             "models": ["__main__"]
         }

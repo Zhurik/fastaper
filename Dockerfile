@@ -10,5 +10,5 @@
 FROM tiangolo/uvicorn-gunicorn:python3.8
 COPY . /app
 WORKDIR /app
-RUN pip3 install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 8080
